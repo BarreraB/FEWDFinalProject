@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us | ClaimPix</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Navigation -->
+		<div class="top-nav"> 
+			<div class="main-nav">
+				<div class="logo-nav">
+					<a href="Projects.html"><img src="images/ClaimPIX_logo.png" alt="ClaimPix Logo"></a>
+				</div>
+				<nav class="desktop-nav">
+					<div class="home-nav">
+						<ul>
+							<li><a href="Our Solution.html">Our Solution</a></li>
+							<li><a href="Our Team.html">Our Team</a></li>
+							<li><a href="Contact Us.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav>
+				<nav class="mobile-nav">
+					<div id="drop-down-nav">
+						<span class="drop-lines"></span>
+						<span class="drop-lines"></span>
+						<span class="drop-lines"></span>
+					</div>
+					<div class="nav-links">
+						<ul>
+							<li class="nav-items"><a href="Our Solution.html">Our Solution</a></li>
+							<li class="nav-items"><a href="Our Team.html">Our Team</a></li>
+							<li class="nav-items"><a href="Contact Us.html">Contact</a></li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--- End of Navigation-->
+
+		<header class="fade-scroll">
+			<div style="background-image: url(images/AdobeStock_157901382.jpeg)" class="claimpix-header-img">
+				<div class="bg-overlay"></div>
+				<div class="title-container">
+					<div class="title-row">
+						<div class="page-title">
+							<h1 class="team-title">Contact Us</h1>
+							<span class="border"></span>
+						</div>						
+					</div>
+				</div>		
+
+			</div>
+		</header>
+		<section>
+			<div class="col-12">
+				<div class="row">
+					<div class="inner-column contact-title-1">
+						<div class="section-title">
+							<h2>Contact</h2>
+							<hr class="border">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="col-12">
+				<div class="row">
+					<div class="inner-column">
+						<div class="contact-form-1">
+							<form name="contact-us" novalidate netlify>
+								<ul class="form-style-1">
+									<li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+									<li>
+										<label for="email">Email <span class="required">*</span>
+											<input type="email" id="mail" name="field3" class="field-long" />
+											<span class="error"></span>
+										</label>
+									</li>
+									<li>
+										<label>Subject</label>
+										<select name="field4" class="field-select">
+											<option value="Technical">Technical</option>
+											<option value="Partnership">Partnership</option>
+											<option value="General Question">General</option>
+										</select>
+									</li>
+									<li>
+										<label>Your Message <span class="required">*</span></label>
+										<textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+									</li>
+									<li>
+										<input type="submit" value="Submit" />
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="main-footer">
+				<div class="footer-logo">
+					<a href="Projects.html"><img src="images/ClaimPIX_logo.png" alt=""></a>
+				</div>
+				<div class="footer-nav">			
+
+					<ul>
+						<li><a href="Our Solution.html">Our Solution</a></li>
+						<li><a href="Our Team.html">Our Team</a></li>
+						<li><a href="Contact Us.html">Contact Us</a></li>
+					</ul>
+				</div>				
+				
+			</div>
+			<div class="trade-footer">
+				<div class="trade-content">
+					<p>Copyright ClaimPix 2018 | All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		
+
+
+
+		
+	</div>
+	<!--<script>
+
+  var hamburger = document.querySelector('#drop-down-nav');
+
+  var mNav = document.querySelector('.nav-links');
+
+  hamburger.onclick = function(){
+
+    var status = mNav.classList.contains('active');
+
+    if(!status) {
+      mNav.classList.add('active');
+    } else {
+      mNav.classList.remove('active');
+    }
+  }
+</script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
