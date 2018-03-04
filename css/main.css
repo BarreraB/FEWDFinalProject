@@ -89,11 +89,6 @@ NAVIGATION
 .main-nav {
 	margin-top: 10px;
 }
-.nav-links {
-	margin-top: 10px;
-	margin-right: 25px;
-	font-family: 'Raleway';
-}
 .nav-links a {
 	color: #fff;
 	text-decoration: none;	
@@ -101,15 +96,12 @@ NAVIGATION
 .nav-links ul li {
 	display: block;	
 	margin: 10px 8px 15px 8px;
+	border-top: 2px solid #6eb98f;
 }
 .logo-nav {
 	float: left;
 	box-sizing: border-box;
 	margin-left: 25px;
-}
-.nav-links {
-	float: right;
-	box-sizing: border-box;	
 }
 
 /** Test Drop Down Nav **/
@@ -128,17 +120,21 @@ NAVIGATION
 	margin-right: 21px;
 }
 .nav-links {
-	display: block;
+	display: none;
 	padding: 10px;
 	position: absolute;
 	z-index: 1;
 	margin-right: 85px;
 	width: 200px;
-	background-color: #373737;
+	background-color: #434a54;
 	height: 200px;
 	transform: translate(189%,0%);
 	transition: 1s all cubic-bezier(1, 0.25, 0.07, 0.96);
 	box-shadow: -2px 3px 5px;
+	float: right;
+	box-sizing: border-box;	
+	font-family: 'Raleway';
+	margin-top: 10px;
 }
 .nav-items {
 	color: white;
@@ -163,7 +159,7 @@ span.drop-lines {
 	}
 	.nav-links.active {
 		display: block;
-		transform: translate(-20%, 0%);
+		transform: translate(-38%, 6%);
 	}
 	.desktop-nav {
 		display: none;
@@ -185,13 +181,14 @@ span.drop-lines {
 .home-nav ul li a {
 	text-decoration: none;
 	color: #333333;
-	text-transform: uppercase;
+	text-transform: uppercase;	
 }
 .home-nav {
 	margin-right: 15px;
 }
 .home-nav ul li a:hover {
 	color: #6eb98f;
+	border-bottom: 2px solid;
 }
 
 
@@ -322,12 +319,12 @@ span.drop-lines {
  	opacity: .4;
  }
  footer {
- 	background-color: #373737;
+ 	background-color: #434a54;
  	height: 100%;
  }
  .main-footer {
  	position: relative;
- 	background-color: #373737;	
+ 	background-color: #434a54;	
  	padding: 10px;
  	text-align: center;
  }
@@ -354,10 +351,15 @@ span.drop-lines {
  	text-align: center;
  	padding: 10px;
  }
+ .copy-icon {
+ 	color: #6fb98f;
+ }
 
 /************************
-		TEAM CARDS
-		************************/
+*************************
+******* TEAM CARDS ****
+*************************
+************************/
 
 		.team-col {
 			float: left;	
@@ -412,10 +414,12 @@ span.drop-lines {
 			border: 1px solid #6fb98f;
 		}
 		.title {
-			color: #ddd;
+			color: #6fb98f;
 			font-size: 18px;
 			line-height: 18px;
 			text-transform: uppercase;
+			font-weight: 800;
+			margin-top: 5px;
 		}
 		.team-wrapper {
 			background-color: #f4f4f4;
@@ -481,6 +485,16 @@ span.drop-lines {
 			content: "";
 			display: table;
 			clear: both;
+		}
+		.about-us-solution:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.about-us-solution {
+	margin-bottom: 20px;
+    /*margin-top: 20px;*/
+    background-color: #f4f4f4;
 		}
 
 /**********************
@@ -577,6 +591,10 @@ span.drop-lines {
 		border: 2px solid #fff;
 		border-radius: 5px;
 	}
+	/****************************
+	************ Form Validation ******
+	**********************************/
+
 
 
 	/********** End of Form Style ********/
@@ -646,11 +664,38 @@ span.drop-lines {
 		-ms-transform: perspective(800px);
 		-o-transform: perspective(800px);
 		transform: perspective(800px);
-	}
-	.content-wraper p {
 		transition: all 0.8s ease;
+	}
+	.content-wrapper p {
+		transition: all 0.8s ease;
+		transform: translate3d(0,0,0px) rotateY(0deg);
 	}
 	.content-wrapper.hidden p {
 		opacity: 0;
 		transform: translate3d(0,0,400px) rotateY(40deg);
+		transition: all 0.8s ease;
 	}
+.claimpix-logo {
+	transform: scale(1) rotate(0deg) translate(0px);
+	transition: 1s all ease-in-out;
+}
+.claimpix-logo.active {
+	transform: scale(2) rotate(360deg) translate(20px, 0px);
+	position: relative;
+	z-index: 9;
+}
+
+.footer-item {
+	transform: scale(1) rotate(0deg) translate(0px);
+	transition: 1s all ease-in-out;
+}
+.footer-item.active {
+	transform: scale(2) rotate(0deg) translate(-20px, 0px);
+}
+.footer-item-1 {
+	transform: scale(1) translate(0px);
+	transition: 1s all ease-in-out;
+}
+.footer-item-1.active {
+	transform: scale(2) translate(20px);
+}
